@@ -1,0 +1,38 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.sql": "sql"
+        },
+        "sqltools.connections": [
+            {
+                "name": "CSCI243 Local Database",
+                "driver": "PostgreSQL", 
+                "server": "localhost",
+                "port": 5433,
+                "database": "csci243_db",
+                "username": "csci243_user",
+                "password": "csci243_pass",
+                "connectionTimeout": 30,
+                "previewLimit": 50
+            }
+        ],
+        "sqltools.useNodeRuntime": true,
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "sql.format.alignColumnDefinitions": true,
+        "sql.format.keywordCase": "upper"
+    },
+    "extensions": {
+        "recommendations": [
+            "ckolkman.vscode-postgres",
+            "mtxr.sqltools",
+            "mtxr.sqltools-driver-pg",
+            "ms-vscode.powershell"
+        ]
+    }
+}

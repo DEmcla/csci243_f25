@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: csci243_postgres
+    environment:
+      POSTGRES_USER: csci243_user
+      POSTGRES_PASSWORD: csci243_pass
+      POSTGRES_DB: csci243_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    # No named volumes to avoid permission issues
+
+# Skip pgAdmin for non-admin computers - use VS Code instead

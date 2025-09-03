@@ -1,0 +1,51 @@
+# Textbook PDF (copyrighted material)
+practicalsql2ndedition.pdf
+*.pdf
+
+# Temporary extracted chapters
+temp/
+*.tmp
+temp_chapter_*.pdf
+
+# Scripts folder (processing scripts)
+scripts/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Virtual environments
+bin/
+include/
+lib/
+lib64/
+share/
+pyvenv.cfg
+
+# Docker environment variables (contains passwords)
+docker/.env
+.env
+
+# Keep the example file
+!docker/.env.example
